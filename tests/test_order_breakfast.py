@@ -37,4 +37,4 @@ def test_breakfast_order(dynamodb):
     try:
         order_breakfast()
     except BaseException as err:
-        assert 'Item' in err.response["CancellationReasons"][0]
+        assert 'Item' in err.response
